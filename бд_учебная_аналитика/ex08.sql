@@ -6,7 +6,7 @@
 вычислить среднее время выполнения урока в часах, результат округлить до 2-х знаков после запятой;
 вывести информацию по возрастанию времени, пронумеровав строки, для каждого урока указать номер модуля и его позицию в нем.
 Столбцы результата назвать Номер, Урок, Среднее_время
-/*
+*/
 
 WITH time_les (student_id, module_id, lesson_position, lesson_name, time) AS 
 (SELECT student_id, module_id, lesson_position, lesson_name, SUM(submission_time - attempt_time)
